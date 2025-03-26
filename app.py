@@ -6,8 +6,8 @@ st.set_page_config(layout="wide")
 st.title("Early Six Analyis by Ayush Goel")
 
 
-df_ballByball = pd.read_csv("IPL/Ball_By_Ball_Match_Data.csv")
-df_match = pd.read_csv("IPL/Match_info.csv")
+df_ballByball = pd.read_csv("ball_data.csv")
+df_match = pd.read_csv("match_data.csv")
 
 
 batting_team = st.sidebar.selectbox("Choose Batting Team",df_ballByball["BattingTeam"].unique())
