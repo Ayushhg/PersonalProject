@@ -39,7 +39,7 @@ opponent_counts.columns = ["Opponent Team", "Number of Matches with Early Six"]
 st.write("Early Sixes Breakdown by Opponent Team:")
 st.dataframe(opponent_counts)
 
-player_selected = st.selectbox("Choose Batting Team",df_Ball_Batter["Batter"].unique())
+player_selected = st.selectbox("Choose Batsman",df_Ball_Batter["Batter"].unique())
 
 df_Ball_Batter = df_Ball_Batter[df_Ball_Batter["Batter"] == player_selected]
 
