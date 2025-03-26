@@ -10,7 +10,7 @@ df_ballByball = pd.read_csv("ball_data.csv")
 df_match = pd.read_csv("match_data.csv")
 
 
-batting_team = st.sidebar.selectbox("Choose Batting Team",df_ballByball["BattingTeam"].unique())
+batting_team = st.selectbox("Choose Batting Team",df_ballByball["BattingTeam"].unique())
 
 df_ballByball = df_ballByball[df_ballByball["BattingTeam"] == batting_team]
 
